@@ -1,0 +1,13 @@
+{
+  "name": "b1ackha7tv",
+  "version": "0.8.0",
+  "private": true,
+  "description": "Browser regression tests for a Samsung Tizen TV launcher",
+  "license": "MIT",
+  "scripts": {
+    "test": "node tests/dedup.cjs && node tests/exit.cjs && node tests/tv-settings.cjs && node tests/background.cjs && node tests/launch.cjs && node tests/name.cjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.56.0"
+  }
+}

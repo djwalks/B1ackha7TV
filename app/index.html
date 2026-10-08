@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My TV</title><link rel="stylesheet" href="css/style.css"><script src="main.js" defer></script>
+</head>
+<body>
+<div id="wallpaper" aria-hidden="true"></div>
+<header><div class="brand"><span class="mark" id="launcher-mark">MT</span> <span id="launcher-title">My TV</span></div><time id="clock"></time></header>
+<section class="quick-actions"><p>Your space.<br>Your entertainment.</p><nav><button id="watch-tv">Watch TV full screen</button><button id="edit-apps">Edit apps</button><button id="refresh">Refresh apps</button><button id="settings-open">TV &amp; launcher settings</button></nav></section>
+<aside id="preview" aria-label="TV input preview"><div id="preview-picture"><span id="preview-message">Connecting to your TV input…</span></div><div class="preview-caption"><span class="live-dot"></span><span id="source-label">TV / HDMI preview</span><button id="preview-retry">Retry TV</button><button id="preview-toggle">Turn off</button></div></aside>
+<main id="library"><div class="section-title"><h2 id="library-title">Your main apps</h2><span id="app-count"></span></div><p id="launch-feedback" role="status" hidden></p><p id="edit-hint" hidden>Select an app to add or remove its Home shortcut. Your apps stay installed.</p><div id="apps" aria-label="Installed applications"></div><p id="empty" hidden></p></main>
+<section id="settings" hidden aria-label="Launcher settings"><h2>Make it yours</h2><button id="settings-close">Done</button>
+<h3>Your launcher name</h3><label for="launcher-name">Name shown at the top left</label><div class="row"><input id="launcher-name" type="text" maxlength="32" placeholder="My TV" autocomplete="off"><button id="name-save">Save name</button><button id="name-reset">Reset name</button></div><h3>Samsung TV settings</h3><button id="tv-settings-open">Open TV settings</button><p id="tv-settings-status" role="status">Open Samsung settings if your TV supports it. Otherwise, use Home → Settings on your remote.</p><h3>Background</h3><div class="row"><button data-theme="midnight">Midnight</button><button data-theme="aurora">Aurora</button><button data-theme="ember">Ember</button></div>
+<label for="background-path">Custom image packaged with this app</label><div class="row"><input id="background-path" placeholder="assets/background.jpg" maxlength="180"><button id="background-apply">Apply image</button></div>
+<p class="hint">Add your image to the project and its package file list, then rebuild.</p>
+<h3>Preview input</h3><div id="sources" class="row"></div><button id="sources-refresh">Refresh inputs</button>
+<h3>App pictures</h3><p id="icon-status">Checking app pictures…</p><h3>App list</h3><button id="system-toggle">Show system entries: off</button>
+<h3>Close launcher</h3><button id="close-app">Close app</button><h3>TV settings &amp; startup</h3><p>Use the remote’s Home button for Samsung Settings. If available, try General → Smart Features → Autorun Last App. Startup support depends on your TV and app; this launcher cannot replace Samsung Home.</p>
+<details><summary>Connection details</summary><pre id="diagnostics"></pre></details></section>
+<footer><span>Arrow keys to browse · OK to open · Back to return</span><span id="status" role="status" aria-live="polite">Starting…</span></footer>
+<div id="exit-dialog" hidden role="dialog" aria-modal="true" aria-label="Close launcher"><h2>Close launcher?</h2><button id="exit-cancel">Keep browsing</button><button id="exit-confirm">Close app</button></div>
+</body></html>
+
+
+
+
+

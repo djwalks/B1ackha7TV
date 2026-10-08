@@ -1,0 +1,34 @@
+# Local signing, device configuration, and build output
+*.p12
+*.pfx
+*.pem
+*.key
+*.crt
+*.cer
+*.wgt
+author-signature.xml
+signature*.xml
+profiles.xml
+.env
+.env.*
+*.local.*
+certificates/
+SamsungCertificate/
+.sign/
+.vs/
+.settings/
+.buildResult/
+.Build/
+.package/
+Debug/
+Release/
+Build/
+bin/
+obj/
+node_modules/
+test-results/
+playwright-report/
+# Keep personal custom artwork local by default
+app/assets/background*
+app/assets/*photo*
+app/assets/*family*

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="https://github.com/djwalks/B1ackha7TV" version="0.8.0" viewmodes="maximized">
+  <name>B1ackha7TV</name>
+  <icon src="icon.png">
+  </icon>
+  <content src="index.html">
+  </content>
+  <feature name="http://tizen.org/feature/screen.size.normal.1080.1920">
+  </feature>
+  <tizen:setting screen-orientation="landscape" context-menu="enable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable">
+  </tizen:setting>
+  <tizen:application id="B1ackha7TV0.B1ackha7TV" package="B1ackha7TV0" required_version="2.3">
+  </tizen:application>
+  <tizen:privilege name="http://tizen.org/privilege/application.launch">
+  </tizen:privilege>
+  <tizen:metadata key="http://samsung.com/tv/metadata/prelaunch.support" value="true">
+  </tizen:metadata>
+  <tizen:metadata key="http://tizen.org/metadata/app_ui_type/base_screen_resolution" value="extensive">
+  </tizen:metadata>
+  <tizen:profile name="tv-samsung">
+  </tizen:profile>
+  <tizen:privilege name="http://tizen.org/privilege/application.info" />
+  <tizen:privilege name="http://tizen.org/privilege/tv.window" />
+  <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice" />
+  <tizen:privilege name="http://tizen.org/privilege/filesystem.read" />
+</widget>
